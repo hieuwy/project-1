@@ -7,4 +7,4 @@
 - We also want to allow users to view and rate restaurants based on their queries and experiences
 - So that users can vote on their satisfaction on their experiences and view whether a restaurant is good or not
 
-whats up yall
+
