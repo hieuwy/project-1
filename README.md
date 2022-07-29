@@ -1,5 +1,5 @@
 # Name TBP Project 1
-##User Story
+## User Story
 ```
 - As developers
 - We want to create a platform that will allow users to find locations to eat based on a set list of filters provided for the user to narrow searches.
