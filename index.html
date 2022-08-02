@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Best Anime</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body class="title has-background-grey-dark">
+
+<!--Top Title-->
+
+    <h1 class="title is-size-1  has-text-grey-dark has-background-info pb-6 pl-6 pt-6" id="title">
+      Kia Movies
+    </h1>
+<!--About Section-->
+    <div class="field">
+      <h2 class="title is-1 has-text-info is-large pb-6 pl-6 pt-6">
+        About Kia Movies
+      </h2>
+      <p class="title is-size-1 has-text-info pb-6 pl-6 pt-6">
+       Saw an img and cant find the name.Upload an img and we will be able to find the title
+      </p>
+    </div>
+
+<!--input field-->
+
+    <div class="section">
+      <div class="conatiner">
+        <div class="columns">
+            <div class="column">
+          
+          <div class="block has-addons">
+            <p class="control">
+              <div class="field has-addons">
+           <h3 class="title has-text-link is-size-1">Select files:</h3>
+          </div>
+<form action="/action_page.php">
+  <label class="title has-text-link " for="myfile"></label>
+  <input class="button is-info is-large is-size-3" type="file" id="myfile" name="myfile" multiple><br><br>
+  <input class="button is-info is-large is-size-3" type="submit">
+</form>
+</p>
+          </div>
+          <div class="field has-addons">
+            <p class="control">
+              <input
+                class="input is-large is-focused pb-6 pl-6 pt-6"
+                type="text"
+                placeholder="add URL"
+              />
+            </p>
+          </div>
+
+        </div>
+
+        <!--slideshow start-->
+        <div class="column">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/Akira.webp" style="width: 75%" />
+            <div class="text">Caption</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="img/Ki_Blast.webp"
+              style="width: 75%"
+            />
+            <div class="text">Caption</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/AOT_F2_PV02_00_00_18_16.still012.0.jpg" style="width: 75%" />
+            <div class="text">Caption</div>
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>     
+    </div>
+  </div>
+</div>
+    
+    <!--Java Script-->
+
+    <script src="./scirpt.js"></script>
+  </body>
+</html>
+
+
+    
