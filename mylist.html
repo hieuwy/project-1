@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My List</title>
+    <!-- <link rel="stylesheet" href="debugger.css"> -->
+   <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+  background-color: #191C2D;
+  height: 100vh;
+}
+.navbar {
+    background-color: #191C2D;
+}
+#btn :hover {
+    background:none;
+}
+#title {
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: #191C2D;
+}
+h1{
+    font-weight: bold;
+}
+#discover {
+    font-size: 80px;
+    background-color: #191C2D;
+}
+#ani{
+    color: #1F1F25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1C99FE 20.69%, #E431D5 50.19%,#7532F1 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#creat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+.hero {
+    font-size:larger;
+}
+
+.hero img {
+    width: 500px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-position: left bottom;
+    border: none;
+    box-shadow: 0 0 20px dodgerblue;
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease
+}
+    </style>
+    </head>
+    <body class="title">
+        <nav class="navbar ml-6 pt-6" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start" id="btn">
+                <a class="navbar-item has-text-light">
+                  Randomizer
+                </a>
+                <a class="navbar-item has-text-light">
+                  My List
+                </a>
+              </div>
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-danger">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-info">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero mb-6" id="title">
+            <span class="hero"><img src="img/logo.png" class="logo"></span>
+            <div id="discover">
+            <h1 class="hero has-text-danger -7">My List</h1>
+            <span class="hero has-text-info ">Meet Your Favorite Anime</span>
+            </div>
+            <section class="section mt-6p">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <button class="btn"><img src="img/10199.gif"></button>
+                            <p class="has-text-light"> Akira</p>
+                        </div>
+                        <div class="column">
+                            <button class="btn"><img src="img/goku-vegeta-kamehameha-wave-tc48qxuavd3of8vu.gif"></button>
+                            <p class="has-text-light">Dragon Ball Z</p>
+                        </div>
+                        <div class="column">
+                            <button class="btn"><img src="img/ATOT.gif"></button>
+                            <p class="has-text-light">Attack On Titan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container mb-6 pb-6">
+                    <div class="columns">
+                        <div class="column">
+                            <button class="btn"><img src="img/Akira.webp"></button>
+                            <p class="has-text-light"></p>
+                        </div>
+                        <div class="column">
+                            <button class="btn"><img src="img/Ki_Blast.webp"></button>
+                            <p class="has-text-light"></p>
+                        </div>
+                        <div class="column">
+                            <button class="btn"><img src="img/AOT_F2_PV02_00_00_18_16.still012.0.jpg"></button>
+                            <p class="has-text-light"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          </section>
+    </body>
+</html>
