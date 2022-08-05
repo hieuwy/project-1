@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randomizer</title>
+    <!-- <link rel="stylesheet" href="debugger.css"> -->
+   <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+  background-color: #191C2D;
+  height: 100vh;
+}
+.navbar {
+    background-color: #191C2D;
+}
+#btn :hover {
+    background:none;
+}
+#title {
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: #191C2D;
+}
+h1{
+    font-weight: bold;
+}
+#discover {
+    font-size: 80px;
+    background-color: #191C2D;
+}
+#ani{
+    color: #1F1F25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1C99FE 20.69%, #E431D5 50.19%,#7532F1 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#creat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+.hero {
+    font-size:larger;
+}
+
+.hero img {
+    width: 500px;
+}
+form{
+    margin-top: 50px;
+    margin-left: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: #4B4DFF;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-position: left bottom;
+    border: none;
+    box-shadow: 0 0 20px dodgerblue;
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease
+}
+    </style>
+    </head>
+    <body class="title">
+        <nav class="navbar ml-6 pt-6" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start" id="btn">
+                <a class="navbar-item has-text-light">
+                  Randomizer
+                </a>
+                <a class="navbar-item has-text-light">
+                  My List
+                </a>
+              </div>
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-danger">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-info">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero mb-6" id="title">
+            <span class="hero"><img src="img/logo.png" class="logo"></span>
+            <div id="discover">
+            <h1 class="hero has-text-danger -7">Randomizer</h1>
+            <span class="hero has-text-info ">Select A Genre,<br>And We'll Mix It Up</span>
+            </div>
+          </section>
+          <section class="genre">
+            <div>
+                <div class="navbar-item has-dropdown is-hoverable" >
+                    <a class="navbar-link has-text-light">
+                      Genre
+                    </a>
+                    <div class="navbar-dropdown" >
+                      <a class="navbar-item">
+                        Shonen
+                      </a>
+                      <a class="navbar-item">
+                        Shoujo
+                      </a>
+                      <a class="navbar-item">
+                        Isekai
+                      </a>
+                      <a class="navbar-item">
+                        Horror
+                      </a>
+                      <a class="navbar-item">
+                        Slice of Life
+                      </a>
+                      <a class="navbar-item">
+                        Mecha
+                      </a>
+                      <a class="navbar-item">
+                        Sports
+                      </a>
+                      <a class="navbar-item">
+                        Adventure
+                      </a>
+                      <a class="navbar-item">
+                        Drama
+                      </a>
+                    </div>
+                  </div>
+            </div>
+          </section>
+    </body>
+</html>
