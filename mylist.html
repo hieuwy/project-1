@@ -34,22 +34,7 @@ h1{
     font-size: 80px;
     background-color: #191C2D;
 }
-#ani{
-    color: #1F1F25;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: inline-block;
-    margin-bottom: 20px;
-    background: linear-gradient(120deg, #1C99FE 20.69%, #E431D5 50.19%,#7532F1 79.69%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#creat{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 75px;
-}
+
 .hero {
     font-size:larger;
 }
@@ -74,6 +59,7 @@ transition: 1s ease
     </style>
     </head>
     <body class="title">
+        <!--Navigation bar-->
         <nav class="navbar ml-6 pt-6" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start" id="btn">
@@ -84,6 +70,7 @@ transition: 1s ease
                   My List
                 </a>
               </div>
+              <!--log in-->
               <div class="navbar-end">
                 <div class="navbar-item">
                   <div class="buttons">
@@ -104,24 +91,52 @@ transition: 1s ease
             <h1 class="hero has-text-danger -7">My List</h1>
             <span class="hero has-text-info ">Meet Your Favorite Anime</span>
             </div>
+            <!--1st row of inputs-->
             <section class="section mt-6p">
                 <div class="container">
                     <div class="columns">
                         <div class="column">
-                            <button class="btn"><img src="img/10199.gif"></button>
-                            <p class="has-text-light"> Akira</p>
+                            <form id="form" enctype="multipart/form-data" method="post">
+                                <div class="block">
+                                    <input type="file" class="control " id="image">
+
+                                </div>
+                                <div class="block">
+                                    <button class="btn has-background-info is-rounded" id="inputup">upload</button>
+                                </div>
+                            </form>
+                            <button onclick="remove()" class="btn has-background-danger is-rounded" id="inputremove">remove</button>
+                            <div id="result"></div>
+                           
                         </div>
                         <div class="column">
-                            <button class="btn"><img src="img/goku-vegeta-kamehameha-wave-tc48qxuavd3of8vu.gif"></button>
-                            <p class="has-text-light">Dragon Ball Z</p>
+                            <form id="form" enctype="multipart/form-data" method="post">
+                                <div class="block">
+                                    <input type="file" class="control " id="image">
+                                </div>
+                                <div class="block">
+                                    <button class="btn has-background-info is-rounded" id="inputup">upload</button>
+                                </div>
+                            </form>
+                            <button onclick="remove()" class="btn has-background-danger is-rounded" id="inputremove">remove</button>
+                            <div id="result"></div>
                         </div>
                         <div class="column">
-                            <button class="btn"><img src="img/ATOT.gif"></button>
-                            <p class="has-text-light">Attack On Titan</p>
+                            <form id="form" enctype="multipart/form-data" method="post">
+                                <div class="block">
+                                    <input type="file" class="control " id="image">
+                                </div>
+                                <div class="block">
+                                    <button class="btn has-background-info is-rounded" id="inputup">upload</button>
+                                </div>
+                            </form>
+                            <button onclick="remove()" class="btn has-background-danger is-rounded" id="inputremove">remove</button>
+                            <div id="result"></div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!--2nd row of inputs-->
             <section class="section">
                 <div class="container mb-6 pb-6">
                     <div class="columns">
@@ -142,4 +157,6 @@ transition: 1s ease
             </section>
           </section>
     </body>
+    <!-- Java Script-->
+    <script src="./my-list.js"></script>
 </html>
