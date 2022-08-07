@@ -11,13 +11,19 @@ function searchToggle(obj, evt){
         }
 }
 
-$(function(){
-	$slideshow = $(".gallery ul");
-	$slideactive = $slideshow.find("li.each").first().addClass('active').show();
-	$(".direction .next").click(function(){
-	$slideactive = $slideshow.find("li.active").next();
-		if(!$slideactive.size())
-			$slideactive = $slideshow.find("li.each").first();		$slideshow.find("li.active").removeClass("active");
-			$slideactive.addClass("active");
-	});
-});
+var swiper = new Swiper(".mySwiper", {
+    effect: "flip",
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
