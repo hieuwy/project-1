@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My List</title>
+    <!--Style sheets-->
+    <!-- <link rel="stylesheet" href="debugger.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        background-color: #191c2d;
+        height: 100vh;
+      }
+      .hero {
+        font-size: larger;
+      }
+
+      .hero img {
+        width: 500px;
+      }
+
+      .btn {
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-position: left bottom;
+        border: none;
+        box-shadow: 0 0 20px dodgerblue;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+      }
+
+      #mylist {
+        background-color: #191c2d;
+      }
+
+      #inputup {
+        font-size: medium;
+    position: relative;    
+    padding: 15px;    
+    border-radius: 10px;
+      }
+
+      #inputremove {
+    font-size: medium;
+    position: relative;
+    bottom: 55px;
+    left: 150px;
+    padding: 15px;    
+    border-radius: 10px;}
+    </style>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div class="nav">
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><i class="fa-solid fa-house-chimney"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="randomizer-cards.html"
+              ><i class="fa-solid fa-shuffle"></i> Randomizer</a
+            >
+          </li>
+          <li>
+            <a href="mylist.html"
+              ><i class="fa-solid fa-bookmark"></i> My List</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="main">
+        <img src="./assets/img/logo.png" width="512" height="512" class="animate__bounceInDown">
+        <h1 class="animate__fadeInUpBig">MY LIST</h1>
+        <p class="animate__jackInTheBox">MEET YOUR FAVORITE ANIME</p>
+    </section>
+      <!--1st row of inputs-->
+      <section class="section mt-6p" id="mylist">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <form id="form" enctype="multipart/form-data" method="post">
+                <div class="block">
+                  <input type="file" class="control" id="image" />
+                </div>
+                <div class="block">
+                  <button
+                    class="btn has-background-info is-rounded"
+                    id="inputup"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+              <button
+                onclick="remove()"
+                class="btn has-background-danger is-rounded"
+                id="inputremove"
+              >
+                Remove
+              </button>
+              <div id="result"></div>
+            </div>
+            <div class="column">
+              <form id="form2" enctype="multipart/form-data" method="post">
+                <div class="block">
+                  <input type="file" class="control" id="image2" />
+                </div>
+                <div class="block">
+                  <button
+                    class="btn has-background-info is-rounded"
+                    id="inputup">
+                    Upload
+                  </button>
+                </div>
+              </form>
+              <button
+                onclick="remove()"
+                class="btn has-background-danger is-rounded"
+                id="inputremove">
+                Remove
+              </button>
+              <div id="result2"></div>
+            </div>
+            <div class="column">
+              <form id="form3" enctype="multipart/form-data" method="post">
+                <div class="block">
+                  <input type="file" class="control" id="image3" />
+                </div>
+                <div class="block">
+                  <button
+                    class="btn has-background-info is-rounded"
+                    id="inputup">
+                    Upload
+                  </button>
+                </div>
+              </form>
+              <button
+                onclick="remove()"
+                class="btn has-background-danger is-rounded"
+                id="inputremove">
+                Remove
+              </button>
+              <div id="result3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--2nd row of inputs-->
+      <section class="section" id="mylist">
+        <div class="container mb-6 pb-6">
+          <div class="columns">
+            <div class="column">
+              <button class="btn"><img src="./assets/img/berserk.jpg" /></button>
+              <p class="has-text-light"></p>
+            </div>
+            <div class="column">
+              <button class="btn">
+                <img
+                  src="./assets/img/akira.jpg"
+                />
+              </button>
+              <p class="has-text-light"></p>
+            </div>
+            <div class="column">
+              <button class="btn"><img src="assets/img/kabaneri.jpg" /></button>
+              <p class="has-text-light"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+  <!-- Java Script-->
+  <script src="./assets/js/mylist.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6acf3f536f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</html>
