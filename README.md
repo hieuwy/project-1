@@ -1,1 +1,1 @@
-
+My version of a basic slideshow to flip back and forth through images on a web homepage. The mock up webpage is an anime watching site and the slideshow is a feature to show users content on the site. 
