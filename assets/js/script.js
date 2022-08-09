@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySwiper", {
   options = {
       method: 'POST',
       headers: {
-          'Authorization': 'Bearer ' + accessToken,
+          'Authorization': 'Bearer' + accessToken,
           'Content-Type': 'application/json',
           'Accept': 'application/json',
       },

@@ -66,58 +66,6 @@ nav ul li a:hover:after{
     width: 100%;
 }
 
-/* Main title and Image */
-
-.animate__bounceInDown{
-    animation-duration: 3s;
-         
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -150px;
-}
-
-
-.main{
-    top: 35%;
-    left: 8%;
-}
-
-
-.main h1{
-    color: #F55;
-    font-size: 75px;
-    font-weight: 900;
-    line-height: 90px;
-    text-transform: inherit;
-    
-    text-align: center;
-
-    
-    
-}
-.main h1 span{
-    color: #2f6bb9;
-    text-align: center;
-}
-
-.animate__fadeInUpBig{
-    animation-duration: 2s;
-}
-
-.animate__jackInTheBox{
-    animation-duration: 2s;
-}
-.main p{
-    
-    color: #ffffff;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 /* Search Bar */
 ::selection {
     background: #202020;
@@ -261,6 +209,60 @@ img{
      top: 10px;
  }
 
+/* Main title and Image */
+
+.animate__bounceInDown{
+    animation-duration: 3s;
+         
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -150px;
+}
+
+
+.main{
+    top: 35%;
+    left: 8%;
+}
+
+
+.main h1{
+    color: #F55;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    
+    text-align: center;
+
+    
+    
+}
+.main h1 span{
+    color: #2f6bb9;
+    text-align: center;
+}
+
+.animate__fadeInUpBig{
+    animation-duration: 2s;
+}
+
+.animate__jackInTheBox{
+    animation-duration: 2s;
+}
+.main p{
+    
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
  /* Slideshow*/
 ::selection{
     color: #f55;
@@ -384,6 +386,7 @@ img{
     margin-bottom: -150px;
     margin-left: 225px;
 }
+
 
 .genre {
     position: relative;

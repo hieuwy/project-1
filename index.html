@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Anination</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-    <!-- <link rel="stylesheet" href="debugger.css"> -->
     <!----CSS link----->
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,26 +23,26 @@
             <nav>
                 <ul>
                   <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
-                    <li><a href="randomizer.html"><i class="fa-solid fa-shuffle"></i> Randomizer</a></li>
+                    <li><a href="./randomizer.html"><i class="fa-solid fa-shuffle"></i> Randomizer</a></li>
                     <li><a href=""><i class="fa-solid fa-bookmark"></i> My List</a></li>
                 </ul>
             </nav>
         </div>
 <!--End of Navigation Panel-->
-
+<div class="search-wrapper">
+  <div class="input-holder">
+      <input type="text" class="search-input" placeholder="Type to search"/>
+      <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+  </div>
+  <span class="close" onclick="searchToggle(this, event);"></span>
+</div>
 <!--Hero Splash-->
         <section class="main">
+          
             <img src="./assets/img/logo.png" width="512" height="512" class="animate__bounceInDown"></img>
-        
             <h1 class="animate__fadeInUpBig">DISCOVER A <span>NEW ANIME</span></h1>
             <p class="animate__jackInTheBox">CREATING THE PERFECT LIST TO BINGE AND WATCH</p>
-            <div class="search-wrapper">
-                <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
-                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-                </div>
-                <span class="close" onclick="searchToggle(this, event);"></span>
-            </div>
+            
         </section> 
 <!--End of Hero Splash-->
     </header>
