@@ -15,4 +15,4 @@
 ```
 
 ## Webpage
-![ANINATION] (./assets/img/screenshot.png)
+![Anination](./assets/img/screenshot.png)
