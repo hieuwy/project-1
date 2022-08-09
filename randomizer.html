@@ -88,8 +88,8 @@ transition: 1s ease
             <nav>
                 <ul>
                   <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
-                    <li><a href=""><i class="fa-solid fa-shuffle"></i> Randomizer</a></li>
-                    <li><a href=""><i class="fa-solid fa-bookmark"></i> My List</a></li>
+                    <li><a href="randomizer.html"><i class="fa-solid fa-shuffle"></i> Randomizer</a></li>
+                    <li><a href="mylist.html"><i class="fa-solid fa-bookmark"></i> My List</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,41 +100,46 @@ transition: 1s ease
           <p class="animate__jackInTheBox">SELECT A GENRE,<br>AND WE'LL SWITCH IT UP</p>
           </section>
           <section class="genre">
-            <div>
-                <div class="navbar-item has-dropdown is-hoverable" >
-                    <a class="navbar-link has-text-light">
-                      Genre
-                    </a>
-                    <div class="navbar-dropdown" >
-                      <a class="navbar-item">
-                        Shonen
-                      </a>
-                      <a class="navbar-item">
-                        Shoujo
-                      </a>
-                      <a class="navbar-item">
-                        Isekai
-                      </a>
-                      <a class="navbar-item">
-                        Horror
-                      </a>
-                      <a class="navbar-item">
-                        Slice of Life
-                      </a>
-                      <a class="navbar-item">
-                        Mecha
-                      </a>
-                      <a class="navbar-item">
-                        Sports
-                      </a>
-                      <a class="navbar-item">
-                        Adventure
-                      </a>
-                      <a class="navbar-item">
-                        Drama
-                      </a>
-                    </div>
-                  </div>
+            <div class="dropdown is-hoverable" id="genre">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Genre</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Shonen
+                  </a>
+                  <a class="dropdown-item">
+                    Shoujo
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Isekai
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Slice of Life
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Mecha
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Drama
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Adventure
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Sports
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Horror
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    

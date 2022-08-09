@@ -385,8 +385,7 @@ img{
     margin-left: 225px;
 }
 
-.genre{
-    justify-content: center;
-    align-items: center;
-    left: 500px;
+#genre {
+    position: relative;
+    left: 900px;
 }
