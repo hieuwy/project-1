@@ -384,3 +384,9 @@ img{
     margin-bottom: -150px;
     margin-left: 225px;
 }
+
+.genre{
+    justify-content: center;
+    align-items: center;
+    left: 500px;
+}
