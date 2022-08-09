@@ -56,3 +56,14 @@
   .swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
   }
+
+/*Shuffel Button*/
+  .shuff {
+    
+    font-size: medium;
+    position: relative;
+    left: 150px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    }
